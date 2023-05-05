@@ -169,8 +169,83 @@ collections:
             name: title
             widget: hidden
             default: Texts
-          - hint: 'Original text: DFE, key: 10803'
+          - hint: >-
+              Original text: Using Artificial Intelligence to study cognitive
+              phenomena of market participants., key: -1cc037f
             label: Text
-            name: '10803'
+            name: '-1cc037f'
             widget: string
+          - hint: 'Original text: Get an edge, key: -5f8cfd1a'
+            label: Text
+            name: '-5f8cfd1a'
+            widget: string
+          - hint: 'Original text: DF Enterprises LLC, Dubai دبي, key: 23718a3f'
+            label: Text
+            name: 23718a3f
+            widget: string
+      - label: Links
+        name: links
+        file: cms/_data/links.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Links
+          - hint: 'Original link: #, key: 23'
+            label: Link
+            name: '23'
+            widget: string
+          - hint: >-
+              Original link: mailto:info@dfe.ae?subject=Get%20an%20edge, key:
+              -66008531
+            label: Link
+            name: '-66008531'
+            widget: string
+      - label: Images
+        name: images
+        file: cms/_data/images.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Images
+          - label: Image
+            name: 10ea7bb3
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 992fddf
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 38bc88e7
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
 publish_mode: editorial_workflow
