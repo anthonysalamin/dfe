@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  branch: main
   accept_roles:
     - admin
     - editor
+  branch: main
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -76,6 +76,13 @@ collections:
             name: twitter:creator
             widget: string
             required: false
+          - label: Twitter Image
+            name: twitter:image
+            widget: image
+            required: false
+            media_library:
+              config:
+                multiple: false
           - label: Additional HTML tags
             name: additional_tags
             widget: text
@@ -562,9 +569,9 @@ collections:
             label: Link
             name: '23'
             widget: string
-          - hint: 'Original link: /privacy-policy, key: 618fe506'
+          - hint: 'Original link: /privacy-policy/, key: -2f934417'
             label: Link
-            name: 618fe506
+            name: '-2f934417'
             widget: string
       - label: Images
         name: images

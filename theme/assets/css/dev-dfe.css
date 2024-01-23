@@ -1,3 +1,9 @@
+:root {
+  --black-orange: #110b0a;
+  --white: white;
+  --chocolate: #ed6d0b;
+}
+
 .w-checkbox {
   margin-bottom: 5px;
   padding-left: 20px;
@@ -44,7 +50,7 @@
 }
 
 body {
-  color: #110b0a;
+  color: var(--black-orange);
   font-family: Syne variablefont wght, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -67,7 +73,7 @@ p, li {
 }
 
 .section.header {
-  color: #fff;
+  color: var(--white);
   background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), var(--image-10ea7bb3);
   background-position: 0 0, 50%;
   background-size: auto, cover;
@@ -76,8 +82,8 @@ p, li {
 }
 
 .section.footer {
-  color: #fff;
-  background-color: #110b0a;
+  background-color: var(--black-orange);
+  color: var(--white);
 }
 
 .container {
@@ -112,7 +118,7 @@ p, li {
 
 .loading {
   z-index: 999;
-  background-color: #fff;
+  background-color: var(--white);
   display: none;
   position: fixed;
   top: 0%;
@@ -375,9 +381,9 @@ p, li {
 
 .cta {
   height: 70px;
+  background-color: var(--chocolate);
   color: #fdfdfd;
   cursor: pointer;
-  background-color: #ed6d0b;
   border-radius: 24px;
   flex-direction: row;
   flex: none;
@@ -445,7 +451,7 @@ p, li {
 }
 
 .link-nav {
-  color: #fff;
+  color: var(--white);
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
@@ -453,7 +459,7 @@ p, li {
 }
 
 .link-text.dark {
-  color: #110b0a;
+  color: var(--black-orange);
 }
 
 .collection-list-wrapper, .collection-list-wrapper-2 {
@@ -482,8 +488,8 @@ p, li {
 .cta-round {
   width: 24px;
   height: 24px;
+  background-color: var(--chocolate);
   cursor: pointer;
-  background-color: #ed6d0b;
   border-radius: 100px;
   justify-content: center;
   align-items: center;
@@ -540,7 +546,7 @@ p, li {
 .btn-send {
   width: 100%;
   height: 56px;
-  background-color: #ed6d0b;
+  background-color: var(--chocolate);
   border-radius: 4px;
   margin-top: 24px;
   font-size: 14px;
@@ -576,7 +582,7 @@ p, li {
 }
 
 .checkbox-label {
-  color: #fff;
+  color: var(--white);
   margin-top: 1px;
   margin-bottom: 0;
   margin-left: 8px;
@@ -673,7 +679,7 @@ p, li {
   }
 
   .wrap-nav.light {
-    background-color: #fff;
+    background-color: var(--white);
   }
 }
 

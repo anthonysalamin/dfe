@@ -15,7 +15,8 @@
   <link href="/assets/css/dev-dfe.css" rel="stylesheet" type="text/css">
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="{{ settings.site.favicon | default: "/assets/images/favicon.jpg" }}" rel="shortcut icon" type="image/x-icon">
-  <link href="{{ settings.site.apple_touch_icon | default: "/assets/images/webclip.jpg" }}" rel="apple-touch-icon">
+  <link href="{{ settings.site.apple_touch_icon | default: "/assets/images/webclip.jpg" }}" rel="apple-touch-icon"><!--  Fathom  -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="HRMYVBFT" defer=""></script>
   <style>
 /* general clean up */
 .w-webflow-badge{display:none!important}
@@ -50,7 +51,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
   <div class="wrapper-form">
     <div class="form-inscription-wrapper w-form">
       <form id="form-question" name="wf-form-Question" data-name="question" action="https://usebasin.com/f/3f559b320e4b" method="post" class="form" data-wf-page-id="6491828a3188678228221172" data-wf-element-id="41f05554-a09d-23c0-1641-d1f08c192328" data-ajax="true">
-        <div class="cta-round absolute"><img loading="lazy" src="{{ images.423ffbb4.url }}" alt="{{ images.423ffbb4.alt | trim | escape }}" class="img-cta"></div><input type="text" class="form-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Name" id="name-question" required=""><input type="email" class="form-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" id="email-question" required=""><textarea id="message-question" name="Message" maxlength="5000" data-name="Message" placeholder="Message" required="" class="form-field textarea w-input"></textarea><label class="w-checkbox checkbox-field"><input type="checkbox" id="checkbox-question" name="Privacy-Policy-Accepted" data-name="Privacy Policy Accepted" required="" class="w-checkbox-input"><span class="checkbox-label w-form-label" for="Privacy-Policy-Accepted">{{ texts.-4c26e57f }}</span></label><input type="submit" value="Send" data-wait="Sending..." class="btn-send w-button">
+        <div class="cta-round absolute"><img loading="lazy" src="{{ images.423ffbb4.url }}" alt="{{ images.423ffbb4.alt | trim | escape }}" class="img-cta"></div><input class="form-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Name" type="text" id="name-question" required=""><input class="form-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" type="email" id="email-question" required=""><textarea id="message-question" name="Message" maxlength="5000" data-name="Message" placeholder="Message" required="" class="form-field textarea w-input"></textarea><label class="w-checkbox checkbox-field"><input id="checkbox-question" type="checkbox" name="Privacy-Policy-Accepted" data-name="Privacy Policy Accepted" required="" class="w-checkbox-input"><span class="checkbox-label w-form-label" for="Privacy-Policy-Accepted">{{ texts.-4c26e57f }}</span></label><input type="submit" data-wait="Sending..." class="btn-send w-button" value="Send">
       </form>
       <div id="success-message-question" class="form-success-message w-form-done">
         <div>{{ texts.33e8f484 }}</div>
@@ -76,7 +77,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
       </a>
     </div>
   </div>
-  <header class="section header wf-section">
+  <header class="section header">
     <div class="container">
       <div class="punchline__container">
         <div id="sticky-element" class="sticky">{{ texts.aee }}</div>
@@ -93,7 +94,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
       </div>
     </div>
   </header>
-  <main id="nav-main" data-w-id="900fdc4b-c4a5-0c2b-d49a-61c78ccbae85" class="section wf-section">
+  <main id="nav-main" data-w-id="900fdc4b-c4a5-0c2b-d49a-61c78ccbae85" class="section">
     <div class="wrapper-halfs">
       <div class="half left">
         {%- assign collection = collections.other-texts | filter: "f_identifier-do-not-modify,eq,2", "ALL", page.inputPath | sort: "-created-on" -%}<div class="collection-list-wrapper-2 w-dyn-list">
@@ -127,7 +128,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
       </div>
     </div>
   </main>
-  <footer id="contact" class="section footer wf-section">
+  <footer id="contact" class="section footer">
     <div class="wrap-window">
       <div class="subline-2 light short">{{ texts.-2d605cbc }}</div>
       <div class="cta-wrap-glass top-margin">
@@ -142,7 +143,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
         <div class="mini margin-top">{{ texts.-153fcf9e }}</div>
       </div>
       <div class="wrap horizontal">
-        <a href="{{ links.618fe506 }}" class="link-nav w-inline-block">
+        <a href="{{ links.-2f934417 }}" class="link-nav w-inline-block">
           <div class="text-link">{{ texts.-3fbde6f6 }}</div>
         </a>
       </div>
