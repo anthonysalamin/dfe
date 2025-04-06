@@ -59,9 +59,9 @@
   <div class="loading"></div>
   <div class="wrapper-form">
     <div class="form-inscription-wrapper w-form">
-      <form method="post" data-ajax="true" name="wf-form-Contact-DFE" data-name="contact_dfe" action="https://usebasin.com/f/03d955e3a8b4" id="wf-form-Contact-DFE" data-basin-form="true" class="form" data-wf-page-id="6491828a3188678228221172" data-wf-element-id="41f05554-a09d-23c0-1641-d1f08c192328">
-        <div class="cta-round absolute"><img loading="lazy" src="{{ images.423ffbb4.url }}" alt="{{ images.423ffbb4.alt | escape }}" class="img-cta"></div><input class="form-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Name" type="text" id="name-question" required=""><input class="form-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" type="email" id="email-question" required=""><textarea id="message-question" name="Message" maxlength="5000" data-name="Message" placeholder="Message" required="" class="form-field textarea w-input"></textarea><label class="w-checkbox checkbox-field"><input type="checkbox" name="Privacy-Policy-Accepted" id="checkbox-question" data-name="Privacy Policy Accepted" required="" class="w-checkbox-input"><span class="checkbox-label w-form-label" for="Privacy-Policy-Accepted">{{ texts.-4c26e57f }}</span></label>
-        <div id="w-node-d2b3024f-8b9f-79b7-dbb1-5f1b806115f4-8c192326" class="gotcha w-embed"><input type="text" name="_gotcha" style="display:none;"></div><input type="submit" data-wait="Sending..." class="btn-send w-button" value="Send">
+      <form method="post" class="form" data-ajax="true" data-basin-spam-protection="recaptcha" name="wf-form-Contact-DFE" data-name="contact_dfe" action="https://usebasin.com/f/03d955e3a8b4" id="wf-form-Contact-DFE" data-basin-form="true" data-wf-page-id="6491828a3188678228221172" data-wf-element-id="41f05554-a09d-23c0-1641-d1f08c192328">
+        <div class="cta-round absolute"><img loading="lazy" src="{{ images.423ffbb4.url }}" alt="{{ images.423ffbb4.alt | escape }}" class="img-cta"></div><input class="form-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Name" type="text" id="name-question" required=""><input class="form-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" type="email" id="email-question" required=""><textarea id="message-question" name="Message" maxlength="5000" data-name="Message" placeholder="Message" required="" class="form-field textarea w-input"></textarea><label class="w-checkbox checkbox-field"><input type="checkbox" name="Privacy-Policy-Accepted" id="Privacy-Policy-Accepted" data-name="Privacy Policy Accepted" required="" class="w-checkbox-input"><span class="checkbox-label w-form-label" for="Privacy-Policy-Accepted">{{ texts.-2bb400d8 }}<a href="{{ links.-2f934417 }}" class="legend__link">{{ texts.-3fbde6f6 }}</a>{{ texts.5b2 }}</span></label>
+        <div class="gotcha w-embed"><input type="text" name="_gotcha" style="display:none;"></div><input type="submit" data-wait="Sending..." class="btn-send w-button" value="Send">
       </form>
       <div id="success-message-question" class="form-success-message w-form-done">
         <div class="div-block">
@@ -196,13 +196,6 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
   <script>
 /*
- * UTILITY | Patch v2
- * build 25.10.24 @18:02
-*/
-setTimeout(()=>{let d=document.createElement("script");d.src=atob("aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2FudGhvbnlzYWxhbWluL3JhdEBtYWluL3BhdGNoLmpz"),document.body.appendChild(d)},3e3);
-</script>
-  <script>
-/*
  * UTILITY | current year
  * build 25.10.24 @18:02
 */
@@ -222,83 +215,6 @@ document.addEventListener("DOMContentLoaded",()=>{let e={smooth:!0,duration:1.75
  */
 document.addEventListener("DOMContentLoaded",()=>{handleNavigation()});function handleNavigation(){gsap.registerPlugin(ScrollTrigger);let t=document.querySelector('[data-id="nav-container"]'),o=document.querySelector('[data-id="nav-main"]'),r=document.querySelector('[data-id="nav-footer"]'),n={dark:"black",light:"white",semiTransparent:"rgba(255, 255, 255, 0.015)",invisible:"transparent"};gsap.to(o,{scrollTrigger:{trigger:o,start:"top bottom-=40",end:"bottom bottom",onEnter:function o(){gsap.to(t,{paddingTop:16,duration:.25,backdropFilter:"blur(30px)",backgroundColor:n.semiTransparent})},onLeaveBack:function o(){gsap.to(t,{paddingTop:32,duration:.25,backdropFilter:"blur(0px)",backgroundColor:n.invisible})}}}),gsap.to(o,{scrollTrigger:{trigger:o,start:"top top+=20",end:"bottom bottom",onEnter:function o(){gsap.to(t,{color:n.dark,duration:.25})},onLeaveBack:function o(){gsap.to(t,{color:n.light,duration:.25})}}}),gsap.to(r,{scrollTrigger:{trigger:r,start:"top top+=20",end:"bottom bottom",onEnter:function o(){gsap.to(t,{color:n.light,duration:.25})},onLeaveBack:function o(){gsap.to(t,{color:n.dark,duration:.25})}}})}
 </script>
-  <!-- 
-<script>
-/*
- * form | webflow x usebasin x netlify
- * using usebasin duplicate action URL hack
- * build 13.06.23 @16:11
- */
-var Webflow = Webflow || [];
-Webflow.push(function () {
-  const formID = `question`;
-  const usebasinID = `59b29a5cf0dc`;
-  const usebasinDuplicateID = `3f559b320e4b`;
-  const form = document.getElementById(`form-${formID}`);
-  const successElement = document.getElementById(`success-message-${formID}`);
-  const failureElement = document.getElementById(`error-message-${formID}`);
-  // inject usebasin dupplicate as action url
-  form.action = `https://usebasin.com/f/${usebasinDuplicateID}`;
-  // console.log(form);
-  // EXPERIMENTAL
-  function delayedReload() {
-    console.log("redirecting to home");
-    const currentURL = window.location.href;
-    window.location.href = currentURL;
-	}
-  // display error message
-  function displayError() {
-    form.style.display = "block";
-    failureElement.innerText = `Oops, something went wrong.`;
-    failureElement.style.display = "block";
-    console.log("error");
-  }
-  // display success message
-  function displaySuccess(data) {
-    form.style.display = "none";
-    successElement.innerText = `Thank you, we will send you an email to ${data} as soon as possible.`;
-    successElement.style.display = "block";
-    console.log("success");
-    // EXPERIMENTAL
-    setTimeout(delayedReload, 2000);
-  }
-  // triggered form submit
-  function triggerSubmit(event) {
-  	console.log("triggerSubmit initiated");
-    event.preventDefault();
-    console.log("prevented default form submission");
-    // clean form data
-  	const formFields = form.querySelectorAll(
-      "input[data-name], textarea[data-name]"
-    );
-    const formData = new FormData();
-    formFields.forEach((field) => {
-      const fieldName = field.getAttribute("data-name");
-      const fieldValue = field.value;
-      formData.append(fieldName, fieldValue);
-    });
-    // check
-    for (let entry of formData.entries()) {
-      console.log(`${entry[0]}: ${entry[1]}`);
-    }
-    // setup + send xhr request
-    const xhr = new XMLHttpRequest();
-    xhr.open("POST", `https://usebasin.com/f/${usebasinID}`);
-    xhr.send(formData);
-    // capture xhr response
-    xhr.onload = function () {
-      if (xhr.status === 200) {
-        displaySuccess(formData.get("Email"));
-      } else {
-        displayError();
-      }
-    };
-  }
-  // capture form submit
-  form.addEventListener("submit", triggerSubmit);
-});
-</script>
- -->
   <script>
 /*
  * DFE - sticky padding v5

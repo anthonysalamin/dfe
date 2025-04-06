@@ -366,37 +366,20 @@ collections:
             name: title
             widget: hidden
             default: Texts
-          - hint: 'Original text: Email Address, key: -2b7010d0'
-            label: Text
-            name: '-2b7010d0'
-            widget: string
-          - hint: >-
-              Original text: Thank you! Your submission has been received!, key:
-              5a0ea5a1
-            label: Text
-            name: 5a0ea5a1
-            widget: string
-          - hint: >-
-              Original text: Oops! Something went wrong while submitting the
-              form., key: -7c112e99
-            label: Text
-            name: '-7c112e99'
-            widget: string
-          - hint: 'Original text: form sent successfully, key: 32fcb8d3'
-            label: Text
-            name: 32fcb8d3
-            widget: string
-          - hint: 'Original text: Error, recaptcha failed, key: 3b902af2'
-            label: Text
-            name: 3b902af2
-            widget: string
           - hint: >-
               Original text: I hereby affirm that I have thoroughly perused,
-              comprehended, and willingly acknowledge the Privacy Policy of
-              DFE., key: -4c26e57f
+              comprehended, and willingly acknowledge our , key: -2bb400d8
             label: Text
-            name: '-4c26e57f'
+            name: '-2bb400d8'
             widget: text
+          - hint: 'Original text: Privacy Policy, key: -3fbde6f6'
+            label: Text
+            name: '-3fbde6f6'
+            widget: string
+          - hint: 'Original text: . , key: 5b2'
+            label: Text
+            name: 5b2
+            widget: string
           - hint: >-
               Original text: Thank you, your message has been sent!, key:
               33e8f484
@@ -444,10 +427,6 @@ collections:
           - hint: 'Original text:  DF Enterprises LLC, Dubai, key: 1b12fdae'
             label: Text
             name: 1b12fdae
-            widget: string
-          - hint: 'Original text: Privacy Policy, key: -3fbde6f6'
-            label: Text
-            name: '-3fbde6f6'
             widget: string
           - hint: 'Original text: Data, key: 2063ca'
             label: Text
@@ -528,10 +507,6 @@ collections:
             label: Text
             name: '603'
             widget: string
-          - hint: 'Original text: Thank you !, key: 4343178a'
-            label: Text
-            name: 4343178a
-            widget: string
           - hint: 'Original text: What’s a Rich Text element?, key: -3c0dda4d'
             label: Text
             name: '-3c0dda4d'
@@ -591,6 +566,10 @@ collections:
             name: title
             widget: hidden
             default: Links
+          - hint: 'Original link: /privacy-policy/, key: -2f934417'
+            label: Link
+            name: '-2f934417'
+            widget: string
           - hint: 'Original link: /, key: 2f'
             label: Link
             name: 2f
@@ -598,10 +577,6 @@ collections:
           - hint: 'Original link: #, key: 23'
             label: Link
             name: '23'
-            widget: string
-          - hint: 'Original link: /privacy-policy/, key: -2f934417'
-            label: Link
-            name: '-2f934417'
             widget: string
       - label: Images
         name: images

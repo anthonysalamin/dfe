@@ -627,6 +627,25 @@ p, li {
   display: flex;
 }
 
+.test {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.body {
+  background-color: #424242;
+}
+
+.legend__link {
+  color: var(--white);
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     flex-direction: column;

